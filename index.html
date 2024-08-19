@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio-website</title>
+    <link rel="website icon" type="png" href="./web-logo.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/30bd86ec73.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- header part  -->
+
+
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <img src="./3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span>Javed</span><br>Baloch From Pakistan</h1>
+                <!-- <a href="https://github.com/javedbaloch123/"><button class= "btn1">Github</button></a> -->
+                <a href="https://github.com/javedbaloch123/"><button class="btn1">Github Account</button></a>
+                <div class="tooltip" id="tooltip">Visit my GitHub and click respositories, see code of my projects</div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!---------------------- -------About---------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="./user1.png" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>My name is Javed, and I am a dedicated computer science student at Sindh University of Pakistan.
+                        I have a strong interest in full stack development and currently focusing on enhancing my skills
+                        in front-end development. My passion for technology drives me to continuously learn and explore
+                        new programming languages and frameworks. With a solid foundation in computer science and a
+                        commitment to excellence, I am eager to contribute to innovative projects and grow as a
+                        proficient full stack developer.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX Designer</span><br>Creating visually appealing and user-friendly digital
+                                experiences.<br>My expertise lies in designing intuitive interfaces <br> that enhance
+                                user satisfaction and engagement.</li>
+                            <li><span>Programming Languages</span><br>React Js , JavaScript, Bootstrap, Html and CSS</li>
+                            <li><span>Tools & Technologies</span><br>Git , Figma and Vs Code</li>
+                            <li><span>Soft Skills</span><br>problem solving, teamwork ability and time management</li>
+
+                                        
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li><span>2023 - 2024</span><br>Designed and developed multiple websites using JavaScript,
+                                CSS, and HTML, <br>ensuring high-quality UI/UX standards.
+                                Successfully completed [10] projects, showcasing creativity and <br>proficiency in
+                                creating visually appealing and user-friendly digital interfaces.
+                                Uploaded projects to GitHub for version control and portfolio display, <br>demonstrating
+                                technical competence and project management skills.</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Currently</span><br>Studying in Computer Science Department<br>at University of
+                                Sindh Jamshoro Pakistan</li>
+                            <li><span>2021 - Metric</span><br>From Naukot In Faran Public School</li>
+                            <li><span>2023 - FSc(Pre-Medical)</span><br>Indus Public College Naukot </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------Services---------------------------------------------------------- ---->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis enim pariatur qui est. Maiores
+                        labore cumque dignissimos quis ut sit eos illum et eligendi numquam. Nostrum ratione quos rerum
+                        vitae!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis enim pariatur qui est. Maiores
+                        labore cumque dignissimos quis ut sit eos illum et eligendi numquam. Nostrum ratione quos rerum
+                        vitae!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis enim pariatur qui est. Maiores
+                        labore cumque dignissimos quis ut sit eos illum et eligendi numquam. Nostrum ratione quos rerum
+                        vitae!</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- --------------------------------------portfolio----------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./age.png" alt="">
+                    <div class="layer">
+                        <h3>project-1</h3>
+                        <p>Quickly determine your age with our easy-to-use Age Calculator! Simply enter your birthdate,
+                            and our JavaScript-powered tool will instantly calculate your exact age.</p>
+                        <a href="https://javedbaloch123.github.io/age-calculator.com/"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./notes.png" alt="">
+                    <div class="layer">
+                        <h3>project-2</h3>
+                        <p>Capture your ideas and stay organized with our Notes App! Easily create, edit, and manage
+                            your notes with a simple and intuitive interface.</p>
+                        <a href="https://javedbaloch123.github.io/Notes.com/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./calculator.png" alt="">
+                    <div class="layer">
+                        <h3>project-3</h3>
+                        <p>Simplify your calculations with our intuitive Calculator App! Featuring a sleek design and
+                            easy-to-use interface, this app allows you to perform basic arithmetic operations
+                            effortlessly.</p>
+                        <a href="https://javedbaloch123.github.io/calculator.com/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./weather.png" alt="">
+                    <div class="layer">
+                        <h3>project-4</h3>
+                        <p>Stay updated with the latest weather conditions in any city with our intuitive Weather App.
+                            Simply enter a city name, and get real-time weather data including temperature, humidity,
+                            and wind speed. </p>
+                        <a href="https://javedbaloch123.github.io/weatherApp/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./game.png" alt="">
+                    <div class="layer">
+                        <h3>project-5</h3>
+                        <p>Enjoy a classic game of Rock Paper Scissors with our interactive app! Choose your move and
+                            challenge the computer in this fun and simple game. The app features intuitive graphics for
+                            rock, paper, and scissors, making it easy to play.</p>
+                        <a href="https://javedbaloch123.github.io/Game/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./password.png" alt="">
+                    <div class="layer">
+                        <h3>project-6</h3>
+                        <p>
+                            Enhance your online security with our Password Generator App! Effortlessly create strong,
+                            random passwords to protect your accounts from unauthorized access.</p>
+                        <a href="https://javedbaloch123.github.io/passwordGenerator.com/"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work" id="seemoreid">
+                    <img src="./list.png" alt="">
+                    <div class="layer">
+                        <h3>project-7</h3>
+                        <p>Boost your productivity with our efficient To-Do List App. Easily add, manage, and track your
+                            tasks with a simple and intuitive interface. Whether you're organizing your daily errands or
+                            planning long-term projects, our app helps you stay on top of your tasks with ease. .</p>
+                        <a href="https://javedbaloch123.github.io/Routine.com/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work" id="seemoreid">
+                    <img src="./quiz.png" alt="">
+                    <div class="layer">
+                        <h3>project-8</h3>
+                        <p>Test your knowledge with our engaging Quiz App! Featuring a variety of questions and
+                            multiple-choice answers, this app provides an interactive way to challenge yourself and
+                            learn new facts. .</p>
+                        <a href="https://javedbaloch123.github.io/quiz/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work" id="seemoreid">
+                    <img src="./quiz.png" alt="">
+                    <div class="layer">
+                        <h3>project-8</h3>
+                        <p>Test your knowledge with our engaging Quiz App! Featuring a variety of questions and
+                            multiple-choice answers, this app provides an interactive way to challenge yourself and
+                            learn new facts. .</p>
+                        <a href="https://javedbaloch123.github.io/StopWatch.com/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="btn" onclick="seemore()">See More</button>
+        <!-- <a href="#" class="btn seemore">See More</a> -->
+
+    </div>
+    </div>
+    <!-------------------------- Contact--- ------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>javedbaloch0091@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>03042297417</p>
+                    <div class="social-icons">
+                        <a href=""onclick='icon()'><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""onclick='icon()'><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""onclick='icon()'><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""onclick='icon()'><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./cv.png" download class="btn btn2">Download CV</a>
+                </div>
+
+
+                <!-- poppup start -->
+
+
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" placeholder="Your Name" name="Name" required>
+                        <input type="email" placeholder="Your Email" name="Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2 btn3" onclick="loader()">Submit</button>
+                        <div class="loader-box">
+                            <div class="loader">
+
+                            </div>
+                            <div class="text">
+                                <p>Sending...</p>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="pop-up">
+                        <img src="./check.png" alt="">
+                        <h2>Thank You!</h2>
+                        <p>Your details has been successfully submitted. Thanks!</p>
+                        <button type="button" onclick="popupHide()">OK</button>
+                    </div>
+
+                    <!-- <span id="msg"></span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyrigth @ Javed Baloch. 2024</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
